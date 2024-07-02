@@ -5,6 +5,7 @@ import theme from '../theme';
 import Text from './Text';
 
 import AppBarTab from './AppBarTab';
+import { ScrollView } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -21,9 +22,21 @@ const styles = StyleSheet.create({
 });
 
 const AppBar = () => {
-  return <View style={styles.container}>
-    <AppBarTab tabs={[{name:'Repositories'}]} />
-  </View>;
+  const tabs = [
+    {
+      name: 'Repositories',
+      link: '/'
+    },
+    {
+      name: 'Sign In',
+      link: 'signin'
+    }
+  ]
+  return (
+  <View style={styles.container}>
+    <AppBarTab tabs={tabs} />
+  </View>
+  )
 };
 
 export default AppBar;
