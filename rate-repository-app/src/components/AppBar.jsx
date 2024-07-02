@@ -15,8 +15,8 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
     backgroundColor: theme.colors.barColor,
     height: 100,
-    paddingLeft: 20,
-    paddingRight: 20
+    paddingLeft: 10,
+    paddingRight: 10
   }
 });
 
